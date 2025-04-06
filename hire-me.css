@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Base styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #ddd;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    border-bottom: 1px solid #333;
+    font-size: 18px;
+  }
+  
+  .logo{
+    font-size: 24px;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+  .logo:hover{
+    transform: scale(1.1);
+}
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #ddd;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #b74b4b;
+  }
+  
+  /* Hire Me Section */
+  .hire-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hire-section h1 {
+    font-size: 36px;
+    color: #b74b4b;
+    margin-bottom: 10px;
+  }
+  
+  .hire-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  
+  .hire-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+  }
+  
+  .hire-form input,
+  .hire-form textarea {
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .hire-form button {
+    padding: 12px;
+    background-color: #b74b4b;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .hire-form button:hover {
+    background-color: #d16c6c;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: #111;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

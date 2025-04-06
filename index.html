@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="index.css">
+        <title> Portfolio Website</title>
+        <style>
+            .menu-toggle {
+                display: none;
+            }
+
+            .menu-icon {
+                display: none;
+                font-size: 2.5rem;
+                color: #b74b4b;
+                cursor: pointer;
+            }
+
+            @media(max-width: 995px) {
+                nav {
+                    display: none;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 60px;
+                    right: 10px;
+                    background-color: #161616;
+                    border: 2px solid #b74b4b;
+                    padding: 1rem;
+                    border-radius: 10px;
+                    z-index: 999;
+                }
+
+                .menu-toggle:checked + .menu-icon + nav {
+                    display: flex;
+                }
+
+                nav a {
+                    display: block;
+                    font-size: 2rem;
+                    margin: 1rem 0;
+                }
+
+                .menu-icon {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+     <header>
+        <a href="#" class="logo">Abhinand AJ</a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+     </header> 
+     <section class="home">
+        <div class ="home-img">
+            <img src="C:\Users\Abhinand A J\Downloads\abhi.png"
+            "C:\Users\Abhinand A J\Downloads\Telegram Desktop" alt="My Image">
+        </div>
+        <div class="home-content">
+            <h1> Hi,Its <span>Abhinand AJ</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p> Guy's This is My Portfolio</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhinandaj2005" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/AbhinandAJ" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/Abhinand_AJ_?t=7XEvTquJBTfROzLrfSG9Jg&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/denji._.xz?igsh=bDFpc3Q1M2FlcWpj" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="hire-me.html" class="btn">Hire Me</a>
+        </div>
+     </section>  
+    </body>
+</html>
